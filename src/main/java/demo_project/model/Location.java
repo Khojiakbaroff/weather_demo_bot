@@ -1,9 +1,7 @@
 package demo_project.model;
 
-import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;
 
-@Generated("com.asif.gsonpojogenerator")
 public class Location{
 
 	@SerializedName("localtime")
@@ -30,50 +28,49 @@ public class Location{
 	@SerializedName("tz_id")
 	private String tzId;
 
-	public String getLocaltime(){
+	public String getLocaltime() {
 		return localtime;
 	}
 
-	public String getCountry(){
+	public String getCountry() {
 		return country;
 	}
 
-	public int getLocaltimeEpoch(){
+	public int getLocaltimeEpoch() {
 		return localtimeEpoch;
 	}
 
-	public String getName(){
+	public String getName() {
 		return name;
 	}
 
-	public double getLon(){
+	public double getLon() {
 		return lon;
 	}
 
-	public String getRegion(){
+	public String getRegion() {
 		return region;
 	}
 
-	public double getLat(){
+	public double getLat() {
 		return lat;
 	}
 
-	public String getTzId(){
+	public String getTzId() {
 		return tzId;
 	}
 
 	@Override
- 	public String toString(){
-		return 
-			"Location{" + 
-			"localtime = '" + localtime + '\'' + 
-			",country = '" + country + '\'' + 
-			",localtime_epoch = '" + localtimeEpoch + '\'' + 
-			",name = '" + name + '\'' + 
-			",lon = '" + lon + '\'' + 
-			",region = '" + region + '\'' + 
-			",lat = '" + lat + '\'' + 
-			",tz_id = '" + tzId + '\'' + 
-			"}";
-		}
+	public String toString() {
+		return "Location{" +
+				"localtime='" + localtime + '\'' +
+				", country='" + country + '\'' +
+				", localtimeEpoch=" + localtimeEpoch +
+				", name='" + name + '\'' +
+				", lon=" + lon +
+				", region='" + region + '\'' +
+				", lat=" + lat +
+				", tzId='" + tzId + '\'' +
+				'}';
+	}
 }

@@ -1,13 +1,8 @@
 package demo_project.model;
 
-import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;
 
-@Generated("com.asif.gsonpojogenerator")
 public class Current{
-
-	@SerializedName("cloud")
-	private int cloud;
 
 	@SerializedName("feelslike_c")
 	private double feelslikeC;
@@ -18,6 +13,48 @@ public class Current{
 	@SerializedName("last_updated")
 	private String lastUpdated;
 
+	@SerializedName("feelslike_f")
+	private double feelslikeF;
+
+	@SerializedName("wind_degree")
+	private int windDegree;
+
+	@SerializedName("last_updated_epoch")
+	private int lastUpdatedEpoch;
+
+	@SerializedName("is_day")
+	private int isDay;
+
+	@SerializedName("precip_in")
+	private double precipIn;
+
+	@SerializedName("wind_dir")
+	private String windDir;
+
+	@SerializedName("gust_mph")
+	private double gustMph;
+
+	@SerializedName("temp_c")
+	private double tempC;
+
+	@SerializedName("pressure_in")
+	private double pressureIn;
+
+	@SerializedName("gust_kph")
+	private double gustKph;
+
+	@SerializedName("temp_f")
+	private double tempF;
+
+	@SerializedName("precip_mm")
+	private double precipMm;
+
+	@SerializedName("cloud")
+	private int cloud;
+
+	@SerializedName("wind_kph")
+	private double windKph;
+
 	@SerializedName("condition")
 	private Condition condition;
 
@@ -27,85 +64,133 @@ public class Current{
 	@SerializedName("vis_km")
 	private double visKm;
 
-	@SerializedName("is_day")
-	private int isDay;
-
 	@SerializedName("humidity")
 	private int humidity;
-
-	@SerializedName("gust_mph")
-	private double gustMph;
-
-	@SerializedName("temp_c")
-	private double tempC;
 
 	@SerializedName("pressure_mb")
 	private double pressureMb;
 
-	public int getCloud(){
-		return cloud;
-	}
+	@SerializedName("vis_miles")
+	private double visMiles;
 
-	public double getFeelslikeC(){
+	public double getFeelslikeC() {
 		return feelslikeC;
 	}
 
-	public double getUv(){
+	public double getUv() {
 		return uv;
 	}
 
-	public String getLastUpdated(){
+	public String getLastUpdated() {
 		return lastUpdated;
 	}
 
-	public Condition getCondition(){
-		return condition;
+	public double getFeelslikeF() {
+		return feelslikeF;
 	}
 
-	public double getWindMph(){
-		return windMph;
+	public int getWindDegree() {
+		return windDegree;
 	}
 
-	public double getVisKm(){
-		return visKm;
+	public int getLastUpdatedEpoch() {
+		return lastUpdatedEpoch;
 	}
 
-	public int getIsDay(){
+	public int getIsDay() {
 		return isDay;
 	}
 
-	public int getHumidity(){
-		return humidity;
+	public double getPrecipIn() {
+		return precipIn;
 	}
 
-	public double getGustMph(){
+	public String getWindDir() {
+		return windDir;
+	}
+
+	public double getGustMph() {
 		return gustMph;
 	}
 
-	public double getTempC(){
+	public double getTempC() {
 		return tempC;
 	}
 
-	public double getPressureMb(){
+	public double getPressureIn() {
+		return pressureIn;
+	}
+
+	public double getGustKph() {
+		return gustKph;
+	}
+
+	public double getTempF() {
+		return tempF;
+	}
+
+	public double getPrecipMm() {
+		return precipMm;
+	}
+
+	public int getCloud() {
+		return cloud;
+	}
+
+	public double getWindKph() {
+		return windKph;
+	}
+
+	public Condition getCondition() {
+		return condition;
+	}
+
+	public double getWindMph() {
+		return windMph;
+	}
+
+	public double getVisKm() {
+		return visKm;
+	}
+
+	public int getHumidity() {
+		return humidity;
+	}
+
+	public double getPressureMb() {
 		return pressureMb;
 	}
 
+	public double getVisMiles() {
+		return visMiles;
+	}
+
 	@Override
- 	public String toString(){
-		return 
-			"Current{" + 
-			"cloud = '" + cloud + '\'' + 
-			",feelslike_c = '" + feelslikeC + '\'' + 
-			",uv = '" + uv + '\'' + 
-			",last_updated = '" + lastUpdated + '\'' + 
-			",condition = '" + condition + '\'' + 
-			",wind_mph = '" + windMph + '\'' + 
-			",vis_km = '" + visKm + '\'' + 
-			",is_day = '" + isDay + '\'' + 
-			",humidity = '" + humidity + '\'' + 
-			",gust_mph = '" + gustMph + '\'' + 
-			",temp_c = '" + tempC + '\'' + 
-			",pressure_mb = '" + pressureMb + '\'' + 
-			"}";
-		}
+	public String toString() {
+		return "Current{" +
+				"feelslikeC=" + feelslikeC +
+				", uv=" + uv +
+				", lastUpdated='" + lastUpdated + '\'' +
+				", feelslikeF=" + feelslikeF +
+				", windDegree=" + windDegree +
+				", lastUpdatedEpoch=" + lastUpdatedEpoch +
+				", isDay=" + isDay +
+				", precipIn=" + precipIn +
+				", windDir='" + windDir + '\'' +
+				", gustMph=" + gustMph +
+				", tempC=" + tempC +
+				", pressureIn=" + pressureIn +
+				", gustKph=" + gustKph +
+				", tempF=" + tempF +
+				", precipMm=" + precipMm +
+				", cloud=" + cloud +
+				", windKph=" + windKph +
+				", condition=" + condition +
+				", windMph=" + windMph +
+				", visKm=" + visKm +
+				", humidity=" + humidity +
+				", pressureMb=" + pressureMb +
+				", visMiles=" + visMiles +
+				'}';
+	}
 }
