@@ -62,7 +62,7 @@ public class Location{
 
 	@Override
 	public String toString() {
-		return "Location{" +
+		return "Location" +
 				"localtime='" + localtime + '\'' +
 				", country='" + country + '\'' +
 				", localtimeEpoch=" + localtimeEpoch +
@@ -70,7 +70,6 @@ public class Location{
 				", lon=" + lon +
 				", region='" + region + '\'' +
 				", lat=" + lat +
-				", tzId='" + tzId + '\'' +
-				'}';
+				", tzId='" + tzId + '\'';
 	}
 }

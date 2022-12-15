@@ -23,9 +23,9 @@ public class Weather{
 	@Override
  	public String toString(){
 		return 
-			"Weather{" + 
+			"Weather" +
 			"current = '" + current + '\'' + 
 			",location = '" + location + '\'' + 
-			"}";
+			"";
 		}
 }

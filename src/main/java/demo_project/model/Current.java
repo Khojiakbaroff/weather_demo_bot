@@ -167,7 +167,7 @@ public class Current{
 
 	@Override
 	public String toString() {
-		return "Current{" +
+		return "Current" +
 				"feelslikeC=" + feelslikeC +
 				", uv=" + uv +
 				", lastUpdated='" + lastUpdated + '\'' +
@@ -190,7 +190,6 @@ public class Current{
 				", visKm=" + visKm +
 				", humidity=" + humidity +
 				", pressureMb=" + pressureMb +
-				", visMiles=" + visMiles +
-				'}';
+				", visMiles=" + visMiles;
 	}
 }

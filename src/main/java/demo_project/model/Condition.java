@@ -27,10 +27,9 @@ public class Condition{
 
 	@Override
 	public String toString() {
-		return "Condition{" +
+		return "Condition" +
 				"code=" + code +
 				", icon='" + icon + '\'' +
-				", text='" + text + '\'' +
-				'}';
+				", text='" + text + '\'';
 	}
 }
